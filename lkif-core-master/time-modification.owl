@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF
-    xmlns="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time-modification.owl#"
-    xmlns:action="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/legal-action.owl#"
-    xmlns:time="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#"
+    xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time-modification.owl#"
+    xmlns:action="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#"
+    xmlns:time="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xml:base="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time-modification.owl">
+  xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time-modification.owl">
   <owl:Ontology rdf:about="">
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >
@@ -32,7 +32,7 @@
 	Authors:      Rinke Hoekstra (UvA), Monica Palmirani (UNIBO)
 	Contributors: Alexander Boer (UvA)
 	</owl:versionInfo>
-    <owl:imports rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/legal-action.owl"/>
+    <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl"/>
   </owl:Ontology>
   <owl:Class rdf:ID="Semantic_Annotation">
     <rdfs:subClassOf>
@@ -42,7 +42,7 @@
     >See ESTRELLA deliverable 3.2</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="#Modification">
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/legal-action.owl#Public_Act"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Public_Act"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >See ESTRELLA deliverable 3.2</rdfs:comment>
   </owl:Class>
@@ -83,7 +83,7 @@
   <owl:Class rdf:ID="Dynamic_Temporal_Entity">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A dynamic temporal entity represents the norm in its evolution over time.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Temporal_Occurrence"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Temporal_Occurrence"/>
   </owl:Class>
   <owl:Class rdf:ID="Remaking">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -116,7 +116,7 @@
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The date when a modification is applied to the destination legislative document. The date can be instantaneous, in the future or in the past. Normally this date coincides with the date of efficacy of the text in which the modification takes place.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Dynamic_Temporal_Entity"/>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
   </owl:Class>
   <owl:Class rdf:ID="Retroactivity">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -133,7 +133,7 @@
   <owl:Class rdf:ID="Efficacy_Interval">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The period during which a normative fragment may be either operative or inoperative, by explicit provision of the document itself. The document is said to be in a period of operation, or enforceability or efficacy, when it may or must be applied or enforced.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
     <rdfs:subClassOf rdf:resource="#Dynamic_Temporal_Entity"/>
   </owl:Class>
   <owl:Class rdf:ID="Start_Efficacy">
@@ -165,7 +165,7 @@
     <rdfs:subClassOf>
       <owl:Class rdf:ID="Static_Temporal_Entity"/>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
   </owl:Class>
   <owl:Class rdf:ID="Exception">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -182,7 +182,7 @@
   <owl:Class rdf:about="#Static_Temporal_Entity">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A static temporal entity captures a single moment in the norm's life that is fixed over time.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Temporal_Occurrence"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Temporal_Occurrence"/>
   </owl:Class>
   <owl:Class rdf:ID="End_in_Force">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -198,7 +198,7 @@
   <owl:Class rdf:ID="Application_Interval">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This is the interval during which a normative document, or fragment, produces the consequences that the normative provision establishes.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
     <rdfs:subClassOf rdf:resource="#Dynamic_Temporal_Entity"/>
   </owl:Class>
   <owl:Class rdf:ID="Interpretation">
@@ -214,7 +214,7 @@
   <owl:Class rdf:ID="In_Force_Interval">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The period during which a normative fragment belongs to the normative system. The period of force for each fragment may change over time as a function of the modifications the document goes through.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
     <rdfs:subClassOf rdf:resource="#Dynamic_Temporal_Entity"/>
   </owl:Class>
   <owl:Class rdf:ID="Repeal">
@@ -231,13 +231,13 @@
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The date when the competent authorities finalise the document by affixing their signatures to it (e.g. promulgation by the president, signature by the queen etc.) This is the date shown on the document itself: it is an objective element and clearly identifyable.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Static_Temporal_Entity"/>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
   </owl:Class>
   <owl:Class rdf:ID="Enter_in_Force_Date">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The date when a dnormative document becomes law and enters the legal system for the first time. This is the moment in the doucment's history starting from which the document can be amended, its applicability assessed, and its manner of producing an effect determined.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Static_Temporal_Entity"/>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
   </owl:Class>
   <owl:Class rdf:ID="Variation">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -247,7 +247,7 @@
   <owl:Class rdf:ID="Existence_Date">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The date when the formal act by which a legislative body freezes the document into its final form, it is the time when the document can be said to have begun its existence.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
   </owl:Class>
   <owl:Class rdf:ID="Relocation">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -268,9 +268,9 @@
     <rdfs:subClassOf rdf:resource="#In_Force_Modification"/>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="initial_date">
-    <rdfs:domain rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
-    <rdfs:subPropertyOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#temporal_relation"/>
-    <rdfs:range rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:domain rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#temporal_relation"/>
+    <rdfs:range rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:ID="initial_date_of"/>
     </owl:inverseOf>
@@ -280,22 +280,22 @@
     <rdfs:range rdf:resource="#In_Force_Interval"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="final_date_of">
-    <rdfs:range rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
-    <rdfs:domain rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:range rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
+    <rdfs:domain rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:ID="final_date"/>
     </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#finishes"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#finishes"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="efficacy">
     <rdfs:domain rdf:resource="#Modification"/>
     <rdfs:range rdf:resource="#Efficacy_Interval"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#initial_date_of">
-    <rdfs:range rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
-    <rdfs:domain rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:range rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
+    <rdfs:domain rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
     <owl:inverseOf rdf:resource="#initial_date"/>
-    <rdfs:subPropertyOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#starts"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#starts"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="produce_efficacy_modification">
     <rdfs:domain>
@@ -309,14 +309,14 @@
     </rdfs:domain>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="duration">
-    <rdfs:range rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
+    <rdfs:range rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
     <rdfs:domain rdf:resource="#Suspension"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#final_date">
     <owl:inverseOf rdf:resource="#final_date_of"/>
-    <rdfs:subPropertyOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#temporal_relation"/>
-    <rdfs:range rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
-    <rdfs:domain rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Interval"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#temporal_relation"/>
+    <rdfs:range rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
+    <rdfs:domain rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Interval"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="application">
     <rdfs:domain rdf:resource="#Modification"/>
@@ -324,7 +324,7 @@
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:ID="date">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <rdfs:domain rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#Moment"/>
+    <rdfs:domain rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#Moment"/>
   </owl:DatatypeProperty>
   <owl:FunctionalProperty rdf:ID="produce_textual_modification">
     <rdfs:domain>

@@ -9,18 +9,18 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY time "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#" >
-    <!ENTITY lkif-top "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl#" >
-    <!ENTITY places "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/relative-places.owl#" >
+    <!ENTITY time "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#" >
+    <!ENTITY lkif-top "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#" >
+    <!ENTITY places "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/relative-places.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl#"
-     xml:base="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl"
+<rdf:RDF xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#"
+     xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:lkif-top="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl#"
-     xmlns:places="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/relative-places.owl#"
-     xmlns:time="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#"
+     xmlns:lkif-top="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#"
+     xmlns:places="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/relative-places.owl#"
+     xmlns:time="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"

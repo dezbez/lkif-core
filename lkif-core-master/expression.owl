@@ -9,32 +9,32 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY time "file://C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#" >
-    <!ENTITY role "file://C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#" >
-    <!ENTITY action "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/action.owl#" >
-    <!ENTITY process "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/process.owl#" >
-    <!ENTITY top "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl#" >
-    <!ENTITY mereo "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#" >
-    <!ENTITY expression "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#" >
-    <!ENTITY place "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/relative-places.owl#" >
+    <!ENTITY time "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#" >
+    <!ENTITY role "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#" >
+    <!ENTITY action "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#" >
+    <!ENTITY process "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/process.owl#" >
+    <!ENTITY top "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#" >
+    <!ENTITY mereo "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#" >
+    <!ENTITY expression "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#" >
+    <!ENTITY place "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/relative-places.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#"
-     xml:base="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl"
+<rdf:RDF xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#"
+     xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:action="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/action.owl#"
-     xmlns:top="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl#"
-     xmlns:time="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#"
+     xmlns:action="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#"
+     xmlns:top="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#"
+     xmlns:time="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:place="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/relative-places.owl#"
+     xmlns:place="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/relative-places.owl#"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
-     xmlns:expression="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#"
+     xmlns:expression="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:mereo="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#"
-     xmlns:process="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/process.owl#"
-     xmlns:role="file:/C:/Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#"
+     xmlns:mereo="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#"
+     xmlns:process="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/process.owl#"
+     xmlns:role="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:daml="http://www.daml.org/2001/03/daml+oil#">
     <owl:Ontology rdf:about="">
@@ -54,7 +54,7 @@
             >This file defines a number of types of what is commonly called a propositional attitude (PA). These relate propositional content to the proposition expressing the content. A subdivision of the propositional attitudes are the mental attitudes (see e.g. Cugola, 1996), types of propositions in the mind. Another category is the PA of an act of communication.</rdfs:comment>
         <owl:versionInfo rdf:datatype="&xsd;string"
             >This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665</owl:versionInfo>
-        <owl:imports rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl"/>
+        <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl"/>
     </owl:Ontology>
     
 

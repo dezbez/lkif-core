@@ -9,18 +9,18 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY time "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#" >
-    <!ENTITY lkif-top "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl#" >
-    <!ENTITY mereo "C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#" >
+    <!ENTITY time "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#" >
+    <!ENTITY lkif-top "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#" >
+    <!ENTITY mereo "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#"
-     xml:base="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl"
+<rdf:RDF xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
+     xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:lkif-top="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-top.owl#"
-     xmlns:mereo="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#"
-     xmlns:time="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/time.owl#"
+     xmlns:lkif-top="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#"
+     xmlns:mereo="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#"
+     xmlns:time="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -44,7 +44,7 @@ Contributors: Joost Breuker (UvA), Monica Palmirani (UNIBO)</owl:versionInfo>
 The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work.</owl:versionInfo>
         <owl:versionInfo rdf:datatype="&xsd;string"
             >This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665</owl:versionInfo>
-        <owl:imports rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl"/>
+        <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl"/>
     </owl:Ontology>
     
 

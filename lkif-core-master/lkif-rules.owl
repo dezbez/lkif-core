@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF
-    xmlns:expression="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#"
+    xmlns:expression="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-    xmlns="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-rules.owl#"
-  xml:base="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/lkif-rules.owl">
+    xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-rules.owl#"
+  xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-rules.owl">
   <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl"/>
+    <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >
 	This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
@@ -43,23 +43,23 @@
     <rdfs:subClassOf>
       <owl:Class rdf:ID="Atom"/>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#Assumption"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Assumption"/>
   </owl:Class>
   <owl:Class rdf:about="#Atom">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#played_by"/>
-        <owl:allValuesFrom rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#Atom"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#played_by"/>
+        <owl:allValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#Atom"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#played_by"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#played_by"/>
         <owl:someValuesFrom>
           <owl:Class>
             <owl:intersectionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#Expression"/>
-              <rdf:Description rdf:about="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#Atom"/>
+              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Expression"/>
+              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#Atom"/>
             </owl:intersectionOf>
           </owl:Class>
         </owl:someValuesFrom>
@@ -67,7 +67,7 @@
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An atom is the most basic (undivisible) part of an LKIF rule (cf. Deliverable 1.1)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#Epistemic_Role"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#Epistemic_Role"/>
   </owl:Class>
   <owl:Class rdf:ID="Valid_Rule">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -79,54 +79,54 @@
   <owl:Class rdf:about="#Rule">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#Composition"/>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#played_by"/>
+        <owl:allValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#Composition"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#played_by"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An LKIF rule, based on swrl:Impl</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#played_by"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#played_by"/>
         <owl:someValuesFrom>
           <owl:Class>
             <owl:intersectionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#Expression"/>
-              <rdf:Description rdf:about="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#Composition"/>
+              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Expression"/>
+              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#Composition"/>
             </owl:intersectionOf>
           </owl:Class>
         </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#Epistemic_Role"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#Epistemic_Role"/>
   </owl:Class>
   <owl:Class rdf:ID="Exception">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An exception states an exception to the head of the rule (defeasibly), cf. Deliverable 1.1</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Atom"/>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#Exception"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Exception"/>
   </owl:Class>
   <owl:Class rdf:ID="Argument">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An argument is some rule used in argumentation (cf. Deliverable 1.1)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#Argument"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Argument"/>
     <rdfs:subClassOf rdf:resource="#Rule"/>
   </owl:Class>
   <owl:Class rdf:ID="Negated_Atom">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#played_by"/>
-        <owl:allValuesFrom rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#Atom"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#played_by"/>
+        <owl:allValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#Atom"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#played_by"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#played_by"/>
         <owl:someValuesFrom>
           <owl:Class>
             <owl:intersectionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/expression.owl#Expression"/>
-              <rdf:Description rdf:about="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/mereology.owl#Atom"/>
+              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Expression"/>
+              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#Atom"/>
             </owl:intersectionOf>
           </owl:Class>
         </owl:someValuesFrom>
@@ -134,7 +134,7 @@
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A negated atom is the negation of some other atom (cf. Deliverable 1.1)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#Epistemic_Role"/>
+    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#Epistemic_Role"/>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="rule_predicate">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -149,13 +149,13 @@
             </owl:unionOf>
           </owl:Class>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#plays"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#plays"/>
       </owl:Restriction>
     </rdfs:range>
     <rdfs:domain>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="#Rule"/>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#plays"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#plays"/>
       </owl:Restriction>
     </rdfs:domain>
   </owl:ObjectProperty>
@@ -163,7 +163,7 @@
     <rdfs:range>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="#Rule"/>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#plays"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#plays"/>
       </owl:Restriction>
     </rdfs:range>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -176,7 +176,7 @@
     <rdfs:range>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="#Atom"/>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#plays"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#plays"/>
       </owl:Restriction>
     </rdfs:range>
     <rdfs:subPropertyOf rdf:resource="#rule_predicate"/>
@@ -187,7 +187,7 @@
     <rdfs:range>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="#Atom"/>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#plays"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#plays"/>
       </owl:Restriction>
     </rdfs:range>
     <rdfs:subPropertyOf rdf:resource="#rule_predicate"/>
@@ -198,7 +198,7 @@
     <rdfs:range>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="#Rule"/>
-        <owl:onProperty rdf:resource="C://Users/Desiree/Desktop/MastersThesisCode/LKIF-Ontology/lkif-core-master/role.owl#plays"/>
+        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#plays"/>
       </owl:Restriction>
     </rdfs:range>
     <rdfs:subPropertyOf rdf:resource="#rule_predicate"/>
