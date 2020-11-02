@@ -58,7 +58,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
 
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Abstract_Entity -->
-
+<!--
     <owl:Class rdf:about="#Abstract_Entity">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
         <rdfs:comment rdf:datatype="&xsd;string">An abstract concept is a concept which does not (necessarily) have a referent in either the physical or the mental world.   
@@ -68,7 +68,7 @@ Abstract entities are (proto)mathematical, formal entities, entities which have 
 As all concepts are abstractions, one may argue that a separate abstract world is difficult to see. In common-sense, a circle has more properties and is less abstract than in mathematics. Even mathematicians marvel about the fact their pure abstractions enable us to predict very concrete things. However, we are not directly concerned with these mappings. The most important is that common-sense knows about a (small) number of proto-mathematical concepts, such as collections, sequences and count-numbers (positive integers). We know also about geometric simplifications such as line, circle, square, cube, etc. These common sense notions might even be the real roots of our mathematics. However, these kind of semi-formal abstractions do not play a very central role in law, and therefore LRI-Core is thinly populated with abstract classes.</rdfs:comment>
     </owl:Class>
     
-
+-->
 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Entity -->
 
