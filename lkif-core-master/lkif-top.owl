@@ -61,8 +61,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
 
     <owl:Class rdf:about="#Abstract_Entity">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:comment rdf:datatype="&xsd;string"
-            >An abstract concept is a concept which does not (necessarily) have a referent in either the physical or the mental world.   
+        <rdfs:comment rdf:datatype="&xsd;string">An abstract concept is a concept which does not (necessarily) have a referent in either the physical or the mental world.   
 
 Abstract entities are (proto)mathematical, formal entities, entities which have a purely formal, logical or mathematical meaning.
 
