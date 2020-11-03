@@ -9,21 +9,21 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY action "https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#" >
-    <!ENTITY process "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl" >
-    <!ENTITY lkif-top "https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#" >
-    <!ENTITY mereology "https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#" >
+    <!ENTITY action "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#" >
+    <!ENTITY process "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#" >
+    <!ENTITY lkif-top "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#" >
+    <!ENTITY mereology "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#"
-     xml:base="https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#"
+     xml:base="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:lkif-top="https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#"
-     xmlns:action="https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#"
+     xmlns:lkif-top="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#"
+     xmlns:action="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:process="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl"
-     xmlns:mereology="https://raw.githubusercontent.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#"
+     xmlns:process="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#"
+     xmlns:mereology="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -62,7 +62,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#actor -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor -->
 
     <owl:ObjectProperty rdf:about="#actor">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -74,7 +74,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#actor_in -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor_in -->
 
     <owl:ObjectProperty rdf:about="#actor_in">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -87,43 +87,43 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/mereology.owl#direct_part -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#direct_part -->
 
     <owl:ObjectProperty rdf:about="&mereology;direct_part"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/mereology.owl#member -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#member -->
 
     <owl:ObjectProperty rdf:about="&mereology;member"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/mereology.owl#part -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#part -->
 
     <owl:ObjectProperty rdf:about="&mereology;part"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#creation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#creation -->
 
     <owl:ObjectProperty rdf:about="&process;creation"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#participant -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#participant -->
 
     <owl:ObjectProperty rdf:about="&process;participant"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#participant_in -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#participant_in -->
 
     <owl:ObjectProperty rdf:about="&process;participant_in"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#result_of -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#result_of -->
 
     <owl:ObjectProperty rdf:about="&process;result_of"/>
     
@@ -140,7 +140,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Action -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Action -->
 
     <owl:Class rdf:about="#Action">
         <owl:equivalentClass>
@@ -163,7 +163,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Agent -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Agent -->
 
     <owl:Class rdf:about="#Agent">
         <owl:equivalentClass>
@@ -194,7 +194,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Artifact -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Artifact -->
 
     <owl:Class rdf:about="#Artifact">
         <owl:equivalentClass>
@@ -212,7 +212,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Collaborative_Plan -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Collaborative_Plan -->
 
     <owl:Class rdf:about="#Collaborative_Plan">
         <rdfs:subClassOf rdf:resource="#Plan"/>
@@ -225,7 +225,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Creation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Creation -->
 
     <owl:Class rdf:about="#Creation">
         <owl:equivalentClass>
@@ -241,7 +241,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Natural_Object -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Natural_Object -->
 
     <owl:Class rdf:about="#Natural_Object">
         <rdfs:subClassOf rdf:resource="&process;Physical_Object"/>
@@ -251,7 +251,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Organisation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Organisation -->
 
     <owl:Class rdf:about="#Organisation">
         <owl:equivalentClass>
@@ -281,7 +281,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Person -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Person -->
 
     <owl:Class rdf:about="#Person">
         <rdfs:subClassOf rdf:resource="#Agent"/>
@@ -292,7 +292,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Personal_Plan -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Personal_Plan -->
 
     <owl:Class rdf:about="#Personal_Plan">
         <rdfs:subClassOf rdf:resource="#Plan"/>
@@ -302,7 +302,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Plan -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Plan -->
 
     <owl:Class rdf:about="#Plan">
         <owl:equivalentClass>
@@ -331,7 +331,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Reaction -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Reaction -->
 
     <owl:Class rdf:about="#Reaction">
         <rdfs:subClassOf rdf:resource="#Action"/>
@@ -341,7 +341,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Trade -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Trade -->
 
     <owl:Class rdf:about="#Trade">
         <rdfs:subClassOf rdf:resource="#Transaction"/>
@@ -351,7 +351,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Transaction -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Transaction -->
 
     <owl:Class rdf:about="#Transaction">
         <rdfs:subClassOf rdf:resource="#Collaborative_Plan"/>
@@ -373,13 +373,13 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Object -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#Mental_Object -->
 
     <owl:Class rdf:about="&lkif-top;Mental_Object"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#Change -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#Change -->
 
     <owl:Class rdf:about="&process;Change">
         <owl:disjointWith rdf:resource="&process;Physical_Object"/>
@@ -387,13 +387,13 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#Physical_Object -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#Physical_Object -->
 
     <owl:Class rdf:about="&process;Physical_Object"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#Process -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#Process -->
 
     <owl:Class rdf:about="&process;Process"/>
     

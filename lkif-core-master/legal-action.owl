@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <rdf:RDF
-    xmlns:action="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#"
-    xmlns:expression="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#"
-    xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#"
+    xmlns:action="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#"
+    xmlns:expression="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#"
+    xmlns="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:role="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#"
+    xmlns:role="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-  xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl">
+  xml:base="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl">
   <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >
 This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
@@ -70,19 +70,19 @@ Contributors: Joost Breuker (UvA), Rosella Rubino (UNIBO)
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A natural person is a human being perceptible through the senses and subject to physical laws, as opposed to an artificial person, i.e., an organization that the law treats for some purposes as if it were a person distinct from its members or owner.</rdfs:comment>
     <owl:equivalentClass>
-      <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#Person">
+      <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Person">
         <owl:equivalentClass rdf:resource="#Natural_Person"/>
       </rdf:Description>
     </owl:equivalentClass>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#Person"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Person"/>
   </owl:Class>
   <owl:Class rdf:ID="Mandate">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Mandate: give (someone) authority to act in a certain way</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#Transaction"/>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#strict_part_of"/>
+        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Transaction"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#strict_part_of"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -90,7 +90,7 @@ Contributors: Joost Breuker (UvA), Rosella Rubino (UNIBO)
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#actor"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor"/>
         <owl:someValuesFrom>
           <owl:Class rdf:about="#Public_Body"/>
         </owl:someValuesFrom>
@@ -112,7 +112,7 @@ Contributors: Joost Breuker (UvA), Rosella Rubino (UNIBO)
     <rdfs:subClassOf rdf:resource="#Private_Legal_Person"/>
   </owl:Class>
   <owl:Class rdf:about="#Legal_Person">
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#Organisation"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Organisation"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A legal entity is a natural person or a legal construct through which the law allows a group of natural persons to act as if it were a single composite individual for certain purposes. The most common purposes are lawsuits, property ownership, and contracts. Sometimes referred to as corporate personhood or legal personality, this concept allows for easy conduct of business by having ownership, lawsuits, and agreements under the name of the legal entity instead of the several names of the people making up the entity.
 
@@ -155,7 +155,7 @@ A legal entity is not necessarily distinct from the natural persons of which it 
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#actor"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor"/>
         <owl:someValuesFrom rdf:resource="#Public_Body"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -163,8 +163,8 @@ A legal entity is not necessarily distinct from the natural persons of which it 
     >Delegate: entrust a task or responsibility to some other person</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#Transaction"/>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#strict_part_of"/>
+        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Transaction"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#strict_part_of"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -174,12 +174,12 @@ A legal entity is not necessarily distinct from the natural persons of which it 
   <owl:Class rdf:about="#Legal_Speech_Act">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A legal speech act creates some propositional attitude towards a legal expression.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Speech_Act"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Speech_Act"/>
   </owl:Class>
   <owl:Class rdf:about="#Public_Act">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A public act is an act by some Person or Organisation which creates (at least) a communicated attitude (and thereby an expression)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#Action"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Action"/>
   </owl:Class>
   <owl:Class rdf:about="#Company">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -201,13 +201,13 @@ A legal entity is not necessarily distinct from the natural persons of which it 
     >Decision: A (written) decision of a public body to perform a public act using a public power assigned by law.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/process.owl#creation"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#creation"/>
         <owl:someValuesFrom>
           <owl:Class>
             <owl:intersectionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Promise"/>
+              <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Promise"/>
               <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#towards"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#towards"/>
                 <owl:someValuesFrom rdf:resource="#Public_Act"/>
               </owl:Restriction>
             </owl:intersectionOf>
@@ -217,19 +217,19 @@ A legal entity is not necessarily distinct from the natural persons of which it 
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#actor"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor"/>
         <owl:someValuesFrom rdf:resource="#Public_Body"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/process.owl#creation"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#creation"/>
         <owl:someValuesFrom>
           <owl:Class>
             <owl:intersectionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Statement_In_Writing"/>
+              <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Statement_In_Writing"/>
               <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#towards"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#towards"/>
                 <owl:someValuesFrom rdf:resource="#Public_Act"/>
               </owl:Restriction>
             </owl:intersectionOf>
@@ -263,7 +263,7 @@ A legal entity is not necessarily distinct from the natural persons of which it 
     <rdfs:subClassOf rdf:resource="#Public_Act"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#actor"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor"/>
         <owl:someValuesFrom rdf:resource="#Legislative_Body"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -280,8 +280,8 @@ A legal entity is not necessarily distinct from the natural persons of which it 
   <owl:Class rdf:ID="Assignment">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#Transaction"/>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#strict_part_of"/>
+        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Transaction"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#strict_part_of"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -290,7 +290,7 @@ A legal entity is not necessarily distinct from the natural persons of which it 
     <rdfs:subClassOf rdf:resource="#Public_Act"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#actor"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor"/>
         <owl:someValuesFrom rdf:resource="#Public_Body"/>
       </owl:Restriction>
     </rdfs:subClassOf>

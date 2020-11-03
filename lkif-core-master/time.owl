@@ -9,18 +9,18 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY time "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#" >
-    <!ENTITY lkif-top "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#" >
-    <!ENTITY mereo "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#" >
+    <!ENTITY time "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#" >
+    <!ENTITY lkif-top "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#" >
+    <!ENTITY mereo "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
-     xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#"
+     xml:base="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:lkif-top="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#"
-     xmlns:mereo="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#"
-     xmlns:time="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
+     xmlns:lkif-top="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#"
+     xmlns:mereo="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#"
+     xmlns:time="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -44,7 +44,7 @@ Contributors: Joost Breuker (UvA), Monica Palmirani (UNIBO)</owl:versionInfo>
 The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work.</owl:versionInfo>
         <owl:versionInfo rdf:datatype="&xsd;string"
             >This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665</owl:versionInfo>
-        <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl"/>
     </owl:Ontology>
     
 
@@ -60,13 +60,13 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/mereology.owl#component -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#component -->
 
     <owl:ObjectProperty rdf:about="&mereo;component"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#after -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#after -->
 
     <owl:ObjectProperty rdf:about="#after">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
@@ -81,7 +81,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#before -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#before -->
 
     <owl:ObjectProperty rdf:about="#before">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
@@ -95,7 +95,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#between -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#between -->
 
     <owl:ObjectProperty rdf:about="#between">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -107,7 +107,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#during -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#during -->
 
     <owl:ObjectProperty rdf:about="#during">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -117,7 +117,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#finishes -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#finishes -->
 
     <owl:ObjectProperty rdf:about="#finishes">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -127,7 +127,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#immediately_after -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#immediately_after -->
 
     <owl:ObjectProperty rdf:about="#immediately_after">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -143,7 +143,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#immediately_before -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#immediately_before -->
 
     <owl:ObjectProperty rdf:about="#immediately_before">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -162,7 +162,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#overlap -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#overlap -->
 
     <owl:ObjectProperty rdf:about="#overlap">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -172,7 +172,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#preceeds -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#preceeds -->
 
     <owl:ObjectProperty rdf:about="#preceeds">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -182,7 +182,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#starts -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#starts -->
 
     <owl:ObjectProperty rdf:about="#starts">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -192,7 +192,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#temporal_relation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#temporal_relation -->
 
     <owl:ObjectProperty rdf:about="#temporal_relation">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -214,31 +214,31 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Spatio_Temporal_Occurrence -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#Spatio_Temporal_Occurrence -->
 
     <owl:Class rdf:about="&lkif-top;Spatio_Temporal_Occurrence"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/mereology.owl#Atom -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#Atom -->
 
     <owl:Class rdf:about="&mereo;Atom"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/mereology.owl#Composition -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#Composition -->
 
     <owl:Class rdf:about="&mereo;Composition"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/mereology.owl#Pair -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#Pair -->
 
     <owl:Class rdf:about="&mereo;Pair"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#Interval -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#Interval -->
 
     <owl:Class rdf:about="#Interval">
         <rdfs:subClassOf rdf:resource="&mereo;Composition"/>
@@ -250,7 +250,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#Moment -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#Moment -->
 
     <owl:Class rdf:about="#Moment">
         <rdfs:subClassOf rdf:resource="&mereo;Atom"/>
@@ -261,7 +261,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#Pair_Of_Periods -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#Pair_Of_Periods -->
 
     <owl:Class rdf:about="#Pair_Of_Periods">
         <rdfs:subClassOf rdf:resource="&mereo;Pair"/>
@@ -277,7 +277,7 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/time.owl#Temporal_Occurrence -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#Temporal_Occurrence -->
 
     <owl:Class rdf:about="#Temporal_Occurrence">
         <rdfs:subClassOf rdf:resource="&lkif-top;Spatio_Temporal_Occurrence"/>

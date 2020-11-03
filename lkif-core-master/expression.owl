@@ -9,32 +9,32 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY time "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#" >
-    <!ENTITY role "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#" >
-    <!ENTITY action "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#" >
-    <!ENTITY process "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/process.owl#" >
-    <!ENTITY top "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#" >
-    <!ENTITY mereo "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#" >
-    <!ENTITY expression "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#" >
-    <!ENTITY place "https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/relative-places.owl#" >
+    <!ENTITY time "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#" >
+    <!ENTITY role "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#" >
+    <!ENTITY action "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#" >
+    <!ENTITY process "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#" >
+    <!ENTITY top "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#" >
+    <!ENTITY mereo "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#" >
+    <!ENTITY expression "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#" >
+    <!ENTITY place "https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/relative-places.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#"
-     xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#"
+     xml:base="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:action="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/action.owl#"
-     xmlns:top="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-top.owl#"
-     xmlns:time="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time.owl#"
+     xmlns:action="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#"
+     xmlns:top="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#"
+     xmlns:time="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:place="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/relative-places.owl#"
+     xmlns:place="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/relative-places.owl#"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
-     xmlns:expression="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#"
+     xmlns:expression="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:mereo="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/mereology.owl#"
-     xmlns:process="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/process.owl#"
-     xmlns:role="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#"
+     xmlns:mereo="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/mereology.owl#"
+     xmlns:process="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#"
+     xmlns:role="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:daml="http://www.daml.org/2001/03/daml+oil#">
     <owl:Ontology rdf:about="">
@@ -54,7 +54,7 @@
             >This file defines a number of types of what is commonly called a propositional attitude (PA). These relate propositional content to the proposition expressing the content. A subdivision of the propositional attitudes are the mental attitudes (see e.g. Cugola, 1996), types of propositions in the mind. Another category is the PA of an act of communication.</rdfs:comment>
         <owl:versionInfo rdf:datatype="&xsd;string"
             >This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665</owl:versionInfo>
-        <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl"/>
     </owl:Ontology>
     
 
@@ -70,13 +70,13 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#actor -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#actor -->
 
     <owl:ObjectProperty rdf:about="&action;actor"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#addressee -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#addressee -->
 
     <owl:ObjectProperty rdf:about="#addressee">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -87,7 +87,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#asserted_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#asserted_by -->
 
     <owl:ObjectProperty rdf:about="#asserted_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -99,7 +99,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#asserts -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#asserts -->
 
     <owl:ObjectProperty rdf:about="#asserts">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -112,7 +112,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#attitude -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#attitude -->
 
     <owl:ObjectProperty rdf:about="#attitude">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -125,7 +125,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#author -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#author -->
 
     <owl:ObjectProperty rdf:about="#author">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -135,7 +135,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#bears -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears -->
 
     <owl:ObjectProperty rdf:about="#bears">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -146,7 +146,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#believed_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#believed_by -->
 
     <owl:ObjectProperty rdf:about="#believed_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -158,7 +158,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#believes -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#believes -->
 
     <owl:ObjectProperty rdf:about="#believes">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -171,7 +171,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#declared_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#declared_by -->
 
     <owl:ObjectProperty rdf:about="#declared_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -183,7 +183,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#declares -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#declares -->
 
     <owl:ObjectProperty rdf:about="#declares">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -196,7 +196,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#evaluated_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#evaluated_by -->
 
     <owl:ObjectProperty rdf:about="#evaluated_by">
         <rdfs:range rdf:resource="#Evaluative_Attitude"/>
@@ -208,7 +208,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#evaluates -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#evaluates -->
 
     <owl:ObjectProperty rdf:about="#evaluates">
         <rdfs:domain rdf:resource="#Evaluative_Attitude"/>
@@ -219,7 +219,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#evaluatively_comparable -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#evaluatively_comparable -->
 
     <owl:ObjectProperty rdf:about="#evaluatively_comparable">
         <rdf:type rdf:resource="&owl;SymmetricProperty"/>
@@ -233,7 +233,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#held_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#held_by -->
 
     <owl:ObjectProperty rdf:about="#held_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -244,7 +244,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#holds -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#holds -->
 
     <owl:ObjectProperty rdf:about="#holds">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -256,7 +256,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#intended_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#intended_by -->
 
     <owl:ObjectProperty rdf:about="#intended_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -268,7 +268,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#intends -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#intends -->
 
     <owl:ObjectProperty rdf:about="#intends">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -281,7 +281,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#medium -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#medium -->
 
     <owl:ObjectProperty rdf:about="#medium">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -293,7 +293,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#observer -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#observer -->
 
     <owl:ObjectProperty rdf:about="#observer">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -306,7 +306,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#observes -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#observes -->
 
     <owl:ObjectProperty rdf:about="#observes">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -318,7 +318,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#promised_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#promised_by -->
 
     <owl:ObjectProperty rdf:about="#promised_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -330,7 +330,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#promises -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#promises -->
 
     <owl:ObjectProperty rdf:about="#promises">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -343,7 +343,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#qualified_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualified_by -->
 
     <owl:ObjectProperty rdf:about="#qualified_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -355,7 +355,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#qualifies -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualifies -->
 
     <owl:ObjectProperty rdf:about="#qualifies">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -366,7 +366,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#qualitatively_comparable -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualitatively_comparable -->
 
     <owl:ObjectProperty rdf:about="#qualitatively_comparable">
         <rdf:type rdf:resource="&owl;SymmetricProperty"/>
@@ -377,7 +377,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#stated_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#stated_by -->
 
     <owl:ObjectProperty rdf:about="#stated_by">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -388,7 +388,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#states -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#states -->
 
     <owl:ObjectProperty rdf:about="#states">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -400,7 +400,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#towards -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#towards -->
 
     <owl:ObjectProperty rdf:about="#towards">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -412,7 +412,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#utterer -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer -->
 
     <owl:ObjectProperty rdf:about="#utterer">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -425,7 +425,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#utters -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utters -->
 
     <owl:ObjectProperty rdf:about="#utters">
         <rdfs:comment rdf:datatype="&xsd;string"
@@ -437,31 +437,31 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/process.owl#creation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#creation -->
 
     <owl:ObjectProperty rdf:about="&process;creation"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/role.owl#counts_as -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#counts_as -->
 
     <owl:ObjectProperty rdf:about="&role;counts_as"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/role.owl#imposed_on -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#imposed_on -->
 
     <owl:ObjectProperty rdf:about="&role;imposed_on"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/role.owl#played_by -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#played_by -->
 
     <owl:ObjectProperty rdf:about="&role;played_by"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/role.owl#plays -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#plays -->
 
     <owl:ObjectProperty rdf:about="&role;plays"/>
     
@@ -478,7 +478,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Action -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Action -->
 
     <owl:Class rdf:about="&action;Action">
         <rdfs:subClassOf>
@@ -524,7 +524,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Agent -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Agent -->
 
     <owl:Class rdf:about="&action;Agent">
         <rdfs:subClassOf>
@@ -537,13 +537,13 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Creation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Creation -->
 
     <owl:Class rdf:about="&action;Creation"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/action.owl#Reaction -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/action.owl#Reaction -->
 
     <owl:Class rdf:about="&action;Reaction">
         <rdfs:subClassOf>
@@ -593,7 +593,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Argument -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Argument -->
 
     <owl:Class rdf:about="#Argument">
         <rdfs:subClassOf rdf:resource="#Reason"/>
@@ -619,7 +619,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Assertion -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Assertion -->
 
     <owl:Class rdf:about="#Assertion">
         <owl:equivalentClass>
@@ -635,7 +635,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Assumption -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Assumption -->
 
     <owl:Class rdf:about="#Assumption">
         <rdfs:subClassOf rdf:resource="&role;Epistemic_Role"/>
@@ -661,7 +661,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Belief -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Belief -->
 
     <owl:Class rdf:about="#Belief">
         <owl:equivalentClass>
@@ -683,7 +683,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Cause -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Cause -->
 
     <owl:Class rdf:about="#Cause">
         <rdfs:subClassOf rdf:resource="&role;Epistemic_Role"/>
@@ -693,7 +693,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Communicated_Attitude -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Communicated_Attitude -->
 
     <owl:Class rdf:about="#Communicated_Attitude">
         <owl:equivalentClass>
@@ -733,7 +733,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Declaration -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Declaration -->
 
     <owl:Class rdf:about="#Declaration">
         <owl:equivalentClass>
@@ -749,7 +749,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Desire -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Desire -->
 
     <owl:Class rdf:about="#Desire">
         <rdfs:subClassOf rdf:resource="#Propositional_Attitude"/>
@@ -759,7 +759,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Document -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Document -->
 
     <owl:Class rdf:about="#Document">
         <rdfs:subClassOf rdf:resource="#Medium"/>
@@ -785,7 +785,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Attitude -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Evaluative_Attitude -->
 
     <owl:Class rdf:about="#Evaluative_Attitude">
         <owl:equivalentClass>
@@ -807,7 +807,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Proposition -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Evaluative_Proposition -->
 
     <owl:Class rdf:about="#Evaluative_Proposition">
         <owl:equivalentClass>
@@ -835,7 +835,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Evidence -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Evidence -->
 
     <owl:Class rdf:about="#Evidence">
         <rdfs:subClassOf rdf:resource="&role;Epistemic_Role"/>
@@ -865,7 +865,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Exception -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Exception -->
 
     <owl:Class rdf:about="#Exception">
         <rdfs:subClassOf rdf:resource="&role;Epistemic_Role"/>
@@ -881,7 +881,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Expectation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Expectation -->
 
     <owl:Class rdf:about="#Expectation">
         <rdfs:subClassOf rdf:resource="&role;Epistemic_Role"/>
@@ -925,7 +925,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Expression -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Expression -->
 
     <owl:Class rdf:about="#Expression">
         <owl:equivalentClass>
@@ -959,7 +959,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Fact -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Fact -->
 
     <owl:Class rdf:about="#Fact">
         <rdfs:subClassOf rdf:resource="&role;Epistemic_Role"/>
@@ -989,7 +989,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Intention -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Intention -->
 
     <owl:Class rdf:about="#Intention">
         <owl:equivalentClass>
@@ -1011,7 +1011,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Lie -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Lie -->
 
     <owl:Class rdf:about="#Lie">
         <rdfs:subClassOf rdf:resource="#Assertion"/>
@@ -1021,7 +1021,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Medium -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Medium -->
 
     <owl:Class rdf:about="#Medium">
         <owl:equivalentClass>
@@ -1043,7 +1043,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Observation -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Observation -->
 
     <owl:Class rdf:about="#Observation">
         <owl:equivalentClass>
@@ -1069,7 +1069,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Problem -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Problem -->
 
     <owl:Class rdf:about="#Problem">
         <rdfs:subClassOf rdf:resource="#Observation"/>
@@ -1081,7 +1081,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Promise -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Promise -->
 
     <owl:Class rdf:about="#Promise">
         <owl:equivalentClass>
@@ -1097,7 +1097,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Proposition -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Proposition -->
 
     <owl:Class rdf:about="#Proposition">
         <rdfs:subClassOf rdf:resource="&top;Mental_Object"/>
@@ -1115,7 +1115,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Propositional_Attitude -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Propositional_Attitude -->
 
     <owl:Class rdf:about="#Propositional_Attitude">
         <owl:equivalentClass>
@@ -1137,7 +1137,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Qualification -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Qualification -->
 
     <owl:Class rdf:about="#Qualification">
         <owl:equivalentClass>
@@ -1159,7 +1159,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Qualified -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Qualified -->
 
     <owl:Class rdf:about="#Qualified">
         <owl:equivalentClass>
@@ -1187,7 +1187,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Reason -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Reason -->
 
     <owl:Class rdf:about="#Reason">
         <rdfs:subClassOf rdf:resource="&role;Epistemic_Role"/>
@@ -1213,7 +1213,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Speech_Act -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Speech_Act -->
 
     <owl:Class rdf:about="#Speech_Act">
         <owl:equivalentClass>
@@ -1229,7 +1229,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Statement_In_Writing -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Statement_In_Writing -->
 
     <owl:Class rdf:about="#Statement_In_Writing">
         <owl:equivalentClass>
@@ -1261,7 +1261,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/expression.owl#Surprise -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Surprise -->
 
     <owl:Class rdf:about="#Surprise">
         <rdfs:subClassOf rdf:resource="#Observation"/>
@@ -1273,13 +1273,13 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Entity -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#Mental_Entity -->
 
     <owl:Class rdf:about="&top;Mental_Entity"/>
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Mental_Object -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-top.owl#Mental_Object -->
 
     <owl:Class rdf:about="&top;Mental_Object">
         <owl:equivalentClass>
@@ -1298,7 +1298,7 @@
     
 
 
-    <!-- http://www.estrellaproject.org/lkif-core/role.owl#Epistemic_Role -->
+    <!-- https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#Epistemic_Role -->
 
     <owl:Class rdf:about="&role;Epistemic_Role"/>
     

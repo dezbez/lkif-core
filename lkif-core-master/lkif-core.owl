@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF
-    xmlns:modification="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/time-modification.owl#"
-    xmlns:norm="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/norm.owl#"
-    xmlns:laction="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#"
+    xmlns:modification="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/time-modification.owl#"
+    xmlns:norm="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/norm.owl#"
+    xmlns:laction="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-core.owl#"
+    xmlns="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-core.owl#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rules="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-rules.owl#"
-    xmlns:lrole="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-role.owl#"
-  xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/lkif-core.owl">
+    xmlns:rules="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-rules.owl#"
+    xmlns:lrole="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-role.owl#"
+  xml:base="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/lkif-core.owl">
   <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-role.owl"/>
-    <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/norm.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-role.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/norm.owl"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >
 Partner contributions from the University of Amsterdam (UvA), the University of Bologna (UNIBO) and the Fraunhofer institute (FOKUS)

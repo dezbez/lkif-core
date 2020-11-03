@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF
-    xmlns="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/norm.owl#"
-    xmlns:laction="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#"
-    xmlns:expression="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#"
+    xmlns="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/norm.owl#"
+    xmlns:laction="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#"
+    xmlns:expression="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-  xml:base="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/norm.owl">
+  xml:base="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/norm.owl">
   <owl:Ontology rdf:about="">
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Partner contributions from the University of Amsterdam (UvA) and the University of Bologna (UNIBO).
@@ -31,7 +31,7 @@
     >
 	This module is part of LKIF-Core, version 1.1, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
 	</owl:versionInfo>
-    <owl:imports rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl"/>
   </owl:Ontology>
   <owl:Class rdf:ID="Hohfeldian_Power">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -41,13 +41,13 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Normatively_Qualified">
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Qualified"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Qualified"/>
     <owl:equivalentClass>
       <owl:Restriction>
         <owl:someValuesFrom>
           <owl:Class rdf:ID="Norm"/>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#qualified_by"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualified_by"/>
       </owl:Restriction>
     </owl:equivalentClass>
     <rdfs:subClassOf>
@@ -79,22 +79,22 @@
             <owl:intersectionOf rdf:parseType="Collection">
               <owl:Class rdf:about="#Norm"/>
               <owl:Restriction>
-                <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
-                <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
               </owl:Restriction>
             </owl:intersectionOf>
           </owl:Class>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
         <owl:allValuesFrom>
           <owl:Restriction>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
-            <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
+            <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
           </owl:Restriction>
         </owl:allValuesFrom>
       </owl:Restriction>
@@ -138,16 +138,16 @@
       <owl:Restriction>
         <owl:someValuesFrom>
           <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Public_Act"/>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/process.owl#created_by"/>
+            <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Public_Act"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/process.owl#created_by"/>
           </owl:Restriction>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#attitude"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#attitude"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Legal expressions are created by  some legal speech act and qualified by a communicated attitude</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Expression"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Expression"/>
   </owl:Class>
   <owl:Class rdf:ID="Qualificatory_Expression">
     <rdfs:subClassOf rdf:resource="#Legal_Expression"/>
@@ -177,17 +177,17 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Belief"/>
+          <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Belief"/>
           <owl:Restriction>
             <owl:someValuesFrom>
               <owl:Class rdf:about="#Disallowed"/>
             </owl:someValuesFrom>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#towards"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#towards"/>
           </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
     </owl:equivalentClass>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Belief"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Belief"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A belief in some violation</rdfs:comment>
   </owl:Class>
@@ -222,7 +222,7 @@
     >A resolution is a written motion adopted by a deliberative body. The substance of the resolution can be anything that can normally be proposed as a motion.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Evaluative_Expression">
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Evaluative_Proposition"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Evaluative_Proposition"/>
     <rdfs:subClassOf rdf:resource="#Legal_Expression"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A legal evaluative expression asserts that something is good or bad, is a value to be optimised or an evil to be minimised (for example “human dignity is value”, “participation ought to be promoted”);</rdfs:comment>
@@ -249,15 +249,15 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
         <owl:allValuesFrom>
           <owl:Restriction>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
             <owl:someValuesFrom>
               <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                  <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Natural_Person"/>
-                  <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legal_Person"/>
+                  <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Natural_Person"/>
+                  <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legal_Person"/>
                 </owl:unionOf>
               </owl:Class>
             </owl:someValuesFrom>
@@ -275,26 +275,26 @@
                 <owl:someValuesFrom>
                   <owl:Class>
                     <owl:unionOf rdf:parseType="Collection">
-                      <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Natural_Person"/>
-                      <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legal_Person"/>
+                      <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Natural_Person"/>
+                      <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legal_Person"/>
                     </owl:unionOf>
                   </owl:Class>
                 </owl:someValuesFrom>
-                <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
               </owl:Restriction>
             </owl:intersectionOf>
           </owl:Class>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A contract bears one or more norms, all of which are uttered by some natural person or legal person. It cannot bear expressions which are uttered by a different kind of agent.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Custom">
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Medium"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Medium"/>
     <owl:disjointWith>
-      <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Document">
+      <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Document">
         <owl:disjointWith rdf:resource="#Custom"/>
       </rdf:Description>
     </owl:disjointWith>
@@ -342,10 +342,10 @@ against using certain kinds of premises for certain purposes, in the interest of
             </owl:unionOf>
           </owl:Class>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
       </owl:Restriction>
     </owl:equivalentClass>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Medium"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Medium"/>
   </owl:Class>
   <owl:Class rdf:ID="Statute">
     <rdfs:subClassOf>
@@ -355,22 +355,22 @@ against using certain kinds of premises for certain purposes, in the interest of
             <owl:intersectionOf rdf:parseType="Collection">
               <owl:Class rdf:about="#Norm"/>
               <owl:Restriction>
-                <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legal_Person"/>
-                <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legal_Person"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
               </owl:Restriction>
             </owl:intersectionOf>
           </owl:Class>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
         <owl:allValuesFrom>
           <owl:Restriction>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
-            <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legal_Person"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
+            <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legal_Person"/>
           </owl:Restriction>
         </owl:allValuesFrom>
       </owl:Restriction>
@@ -422,22 +422,22 @@ against using certain kinds of premises for certain purposes, in the interest of
             <owl:intersectionOf rdf:parseType="Collection">
               <owl:Class rdf:about="#Norm"/>
               <owl:Restriction>
-                <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
-                <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
               </owl:Restriction>
             </owl:intersectionOf>
           </owl:Class>
         </owl:someValuesFrom>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#bears"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#bears"/>
         <owl:allValuesFrom>
           <owl:Restriction>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#utterer"/>
-            <owl:someValuesFrom rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#utterer"/>
+            <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/legal-action.owl#Legislative_Body"/>
           </owl:Restriction>
         </owl:allValuesFrom>
       </owl:Restriction>
@@ -467,15 +467,15 @@ against using certain kinds of premises for certain purposes, in the interest of
     >See normatively qualified. Alternative labels: permitted, sanctioned, let, licensed.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Observation_of_Violation">
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Problem"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Problem"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An observation of a violation, i.e. of something that is Disallowed.</rdfs:comment>
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Observation"/>
+          <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Observation"/>
           <owl:Restriction>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/role.owl#played_by"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/role.owl#played_by"/>
             <owl:someValuesFrom>
               <owl:Class rdf:about="#Disallowed"/>
             </owl:someValuesFrom>
@@ -490,7 +490,7 @@ against using certain kinds of premises for certain purposes, in the interest of
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Subclasses of legal source can be distinguished through the authority of the agent creating the expression (i.e. the agent holding the norm).</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Legal_Source"/>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Document"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Document"/>
   </owl:Class>
   <owl:Class rdf:about="#Potestative_Expression">
     <rdfs:subClassOf rdf:resource="#Legal_Expression"/>
@@ -503,10 +503,10 @@ against using certain kinds of premises for certain purposes, in the interest of
     <owl:equivalentClass>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="#Normatively_Qualified"/>
-        <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#qualifies"/>
+        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualifies"/>
       </owl:Restriction>
     </owl:equivalentClass>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Qualification"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Qualification"/>
   </owl:Class>
   <owl:Class rdf:ID="Potestative_Right">
     <rdfs:subClassOf rdf:resource="#Enabling_Power"/>
@@ -544,17 +544,17 @@ belong to anybody, then x has the potestative-right to start x’s ownership of 
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Intention"/>
+          <rdf:Description rdf:about="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Intention"/>
           <owl:Restriction>
             <owl:someValuesFrom>
               <owl:Class rdf:about="#Disallowed"/>
             </owl:someValuesFrom>
-            <owl:onProperty rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#towards"/>
+            <owl:onProperty rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#towards"/>
           </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
     </owl:equivalentClass>
-    <rdfs:subClassOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#Intention"/>
+    <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#Intention"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The propositional content (i.e. that which is intended) of the intention is disallowed. Interesting concept for establishing mens rea (guilty mind), although 'disallowed' is a weaker qualification than criminal. Note the distinction between purposely committing a crime and knowingly committing a crime. The crime committed does not have to match the crime intended for establishing intent!</rdfs:comment>
   </owl:Class>
@@ -706,7 +706,7 @@ belong to anybody, then x has the potestative-right to start x’s ownership of 
   <owl:ObjectProperty rdf:about="#normatively_comparable">
     <rdfs:domain rdf:resource="#Normatively_Qualified"/>
     <rdfs:range rdf:resource="#Normatively_Qualified"/>
-    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#qualitatively_comparable"/>
+    <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualitatively_comparable"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="normatively_equivalent_or_better">
     <owl:inverseOf>
@@ -721,7 +721,7 @@ belong to anybody, then x has the potestative-right to start x’s ownership of 
       <owl:ObjectProperty rdf:about="#disallowed_by"/>
     </owl:inverseOf>
     <rdfs:range rdf:resource="#Disallowed"/>
-    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#qualifies"/>
+    <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualifies"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Relates a norm to the thing it disallows</rdfs:comment>
   </owl:ObjectProperty>
@@ -749,7 +749,7 @@ belong to anybody, then x has the potestative-right to start x’s ownership of 
       <owl:ObjectProperty rdf:about="#allowed_by"/>
     </owl:inverseOf>
     <rdfs:range rdf:resource="#Allowed"/>
-    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#qualifies"/>
+    <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualifies"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Relates a norm to the thing it allows</rdfs:comment>
   </owl:ObjectProperty>
@@ -764,14 +764,14 @@ belong to anybody, then x has the potestative-right to start x’s ownership of 
   <owl:ObjectProperty rdf:about="#allowed_by">
     <owl:inverseOf rdf:resource="#allows"/>
     <rdfs:domain rdf:resource="#Allowed"/>
-    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#qualified_by"/>
+    <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualified_by"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Relates a qualified Allowed to the norm allowing it</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#disallowed_by">
     <owl:inverseOf rdf:resource="#disallows"/>
     <rdfs:domain rdf:resource="#Disallowed"/>
-    <rdfs:subPropertyOf rdf:resource="https://github.com/dezbez/lkif-core/blob/main/lkif-core-master/expression.owl#qualified_by"/>
+    <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/dezbez/lkif-core/main/lkif-core-master/expression.owl#qualified_by"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Relates a qualified Disallowed to the norm disallowing it</rdfs:comment>
   </owl:ObjectProperty>
